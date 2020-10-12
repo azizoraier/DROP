@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Drop.MainPage">
+   <StackLayout Margin="20,35,20,20">
+        <Image Source="/Users/yazid/Desktop/Drop/Images/DD.jpg"
+               Aspect="Fill"
+       HeightRequest="{OnPlatform iOS=300, Android=250}"
+       WidthRequest="{OnPlatform iOS=300, Android=250}"
+       HorizontalOptions="Center"/>
+
+        <StackLayout Margin="30,0,0,0" Orientation="Horizontal">
+            <Image Source="/Users/yazid/Desktop/Drop/Images/mail.png"
+                   HeightRequest="20"/>
+       <Entry x:Name="EmailEntry" Placeholder="Email"
+              WidthRequest="300"
+              Keyboard="Email"/>
+            </StackLayout>
+
+       <StackLayout Margin="30,0,0,0" Orientation="Horizontal">
+            <Image Source="/Users/yazid/Desktop/Drop/Images/password.png"
+                   HeightRequest="20"/>
+       <Entry x:Name="PasswordEntry" Placeholder="Password"
+       MaxLength="15"
+       IsSpellCheckEnabled="false"
+       IsTextPredictionEnabled="false"
+       IsPassword="true"
+              WidthRequest="300"/>
+       </StackLayout>
+
+        <Button Text="Sign in" Clicked="SignInButton"
+                TextColor="Firebrick"/>
+
+       <StackLayout Margin="0,270,0,0" Orientation="Horizontal">
+           <Label Text="If you don't have account click here!" Margin="0,11,0,0" />
+           <Button Text="Sign up" Clicked="SignUpButton"
+                TextColor="Firebrick"/>
+           </StackLayout>
+    </StackLayout>
+
+</ContentPage>

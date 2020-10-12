@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Drop"
+            x:Class="Drop.HomePage">
+
+    <local:OptionsPage Title="Options" IconImageSource="baseline_reorder_black_18dp"/>
+   <local:EmergencyCallPage Title="Emergency Call" IconImageSource="baseline_local_hospital_black_18dp.png"/>
+    <local:TimeLinePage Title="Home" IconImageSource="baseline_home_black_18dp.png"/>
+    <local:NotificationPage Title="Notification" IconImageSource="baseline_notification_important_black_18dp.png"/>
+    <local:ProfilePage Title="Profile" IconImageSource="baseline_account_circle_black_18dp.png"/>
+</TabbedPage>
